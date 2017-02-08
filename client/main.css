@@ -1,0 +1,136 @@
+
+
+.navDiv{
+	width: 20%;
+	border: 1px solid gray;
+	background-color: lightblue;
+	opacity: .9;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+
+
+.goalListContainer{
+		border: 1px solid gray;
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+}
+
+.goalName{
+	text-align: center;
+	font-size: 36pt;
+}
+.goalList{
+		width: 40%;
+		border: 1px solid gray;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+	.goalList ul{
+		list-style: none;
+		padding-left: 0;
+	}
+	.goalList ul div{
+		text-align: center;
+	}
+.goal{
+		border: 1px solid gray;
+}
+.goalForm{
+
+		border: 1px solid gray;
+	
+}
+
+
+.mileContainer{
+	border: 1px solid gray;
+    /*width: 60%;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+
+}
+
+.mileLabel{
+	text-align: center;
+	font-size: 20pt
+
+
+}
+
+.mileTitle{
+
+}
+.mileDesc{
+
+}
+
+.mile{
+
+
+
+}
+.mileDiv{
+	/*text-align: center;*/
+	    border: 1px solid black;
+
+	width: 80%;
+	height: 23vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 2vh;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.mileDone span{
+	text-decoration: line-through;
+}
+
+.mileDiv span{
+	margin-right: 1vw;
+	margin-left: 1vw;
+}
+
+.mileDiv button{
+	height: 5vh;
+	border:1px solid gray;
+	border-radius: 12px;
+}
+
+.mileDesc()
+
+.addMileContainer{
+	text-align: center;
+}
+.addMile{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.step{
+	width: 100%;
+    text-align: center;
+}
+.step span{
+	margin-left: 1vw;
+	margin-right: 1vw;
+
+}
+
+.stepTrue{
+	text-decoration: line-through; 
+}
+
+
