@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
+import ListGroupItem from "react-bootstrap/lib/ListGroupItem"
+import Button from "react-bootstrap/lib/Button"
 
 export default class GoalList extends Component {
 			constructor(){
 				super();
 			}
 
-			dropGoal(){
+			dropGoal(e){
+				  e.stopPropagation();
 				Meteor.call('dropGoal',{_id:this.props.theKey})
 			}
 
@@ -18,7 +21,10 @@ export default class GoalList extends Component {
 
 			render(){
 				return(
-					<div><li onClick={this.goTime.bind(this)}>{this.props.data} </li><button onClick={this.dropGoal.bind(this)}> Delete </button></div>
+					<ListGroupItem className="goalNameButtonName" onClick={this.goTime.bind(this)}>
+						<span>{this.props.data} </span>
+						<span><Button bsStyle="danger" className="goalNameButton" onClick={this.dropGoal.bind(this)}> Delete </Button> </span>
+					</ListGroupItem>
 					)
 			}
 
@@ -26,6 +32,3 @@ export default class GoalList extends Component {
 
 }
 
-// GoalList.propTypes={
-// 	data:React.PropType.string
-// }

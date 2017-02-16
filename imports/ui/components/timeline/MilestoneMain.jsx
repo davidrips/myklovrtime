@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
 import MilestoneWrapper from "./MilestoneWrapper.jsx"
+import ListGroup from "react-bootstrap/lib/ListGroup"
 
 
 export default class MilestoneMain extends Component {
@@ -25,10 +26,10 @@ export default class MilestoneMain extends Component {
 
 			return(
 				
-					<div className="mileContainer"> 
-					<div className="mileLabel">Milestones:</div>
+					<ListGroup className="mileContainer"> 
+					
 					{res.map( (mile) => {return <MilestoneWrapper key={mile._id} theKey={mile._id} updateScore={this.props.updateScore}  data={mile} className="mile" goal={Session.get("goal")} />})}	
-					</div>	
+					</ListGroup>	
 				)
 		}else{
 				return(<div>Just Waiting</div>)

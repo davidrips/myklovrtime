@@ -1,6 +1,8 @@
 
 import React, {Component} from 'react';
 import {render} from 'react-dom';
+import Button from "react-bootstrap/lib/Button"
+import Nav from "react-bootstrap/lib/Nav"
 
 	export default class Navbar extends Component {
 
@@ -10,7 +12,10 @@ import {render} from 'react-dom';
 
 		render(){
 			return(
-				<div className="navDiv"><button onClick={this.handleClick.bind(this)}>Home</button></div>
+			<Nav>
+				<div className="navDiv"><Button className='homeButton' onClick={this.handleClick.bind(this)}>Home</Button>
+				</div>
+			</Nav>
 				)
 		}
 	}

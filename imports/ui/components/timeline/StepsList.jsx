@@ -11,6 +11,8 @@ export default class StepsList extends Component{
 		}
 
 
+
+
 		render(){
 
 			var res = this.props.steps;
@@ -19,7 +21,7 @@ export default class StepsList extends Component{
 
 				<div className="stepList">
 					
-							{res.map( (step) => {return <Steps key={step._id} theKey={step._id} title={step.title} desc={step.desc} done={step.done} />})}	
+							{res.map( (step) => {return <Steps key={step._id} theKey={step._id} mile={step.mile} updateGoal={this.props.updateGoal} d={this.props.d} t={this.props.t} title={step.title} desc={step.desc} done={step.done} />})}	
 						
 
 						

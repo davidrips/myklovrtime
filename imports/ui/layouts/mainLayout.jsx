@@ -1,21 +1,17 @@
 import React from 'react';
 import render from 'react-dom';
-
+import MainLayoutInner from "./MainLayoutInner.jsx"
+import store from "../../startup/both/create-store.js"
 
 
 
 export const MainLayout = ({content}) => (
 
 
-
-		<div>
-			<p>Here we are!?</p>
-			
-			<div className='mainContent'>
-			{content}
-			</div>
-		</div>
-
+		
+		
+			<MainLayoutInner content={content} store={store}/>
+	
 
 
 

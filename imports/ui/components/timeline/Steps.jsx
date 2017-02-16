@@ -16,11 +16,14 @@ export default class StepsList extends Component{
 
 		handleChange(event){
 			console.log('handling change');
+			// event.stopPropogation()
+			// event.preventDefault()
 			console.log(event.target.checked)
-			Meteor.call("setStep", {step:this.props.theKey, done:event.target.checked})
+			Meteor.call("setStep", {step:this.props.theKey, mile:this.props.mile, done:event.target.checked})
 			this.setState({
 				done: event.target.checked
 			})
+			this.props.updateGoal(this.props.d, this.props.t)
 		}
 
 
